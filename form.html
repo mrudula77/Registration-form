@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title" id="header">
+        <h1 id="heading">Registration Form</h1>
+    </div>
+    <div class="container">
+            <div class="form_display">
+                <form class="form">
+                <div class="panel-primary">
+                    <div class="panel-body">
+                        <div class="form_row">
+                            <h5>--------------------Fill the details below--------------------</h5>
+                            <label for="name" class="form-name">
+                                Name
+                            </label>
+                            <input type="text" class="form-name-field" id="name" size="40" title="Enter Name" />
+                            <span class="message"></span>
+                        </div>
+                        <div class="form_row">
+                            <label for="email" class="form-email">
+                                Email
+                            </label>
+                            <input type="email" class="form-email-field" id="email" size="40" title="Enter Email Id" />
+                            <span class="message " style="font-size:small"></span>
+                        </div>
+                        <div class="form_row">
+                            <label for="website" class="form-website">
+                                Website
+                            </label>
+                            <input type="url" class="form-website-link" id="website" size="37" title="Enter Website URL" />
+                            <span class="message"></span>
+                        </div>
+                        <div class="form_row">
+                            <label for="imageLink" class="form-imageLink">
+                                Image Link
+                            </label>
+                            <input type="url" class="form-image-link" id="imageLink" size="33" title="Enter URL of Image" />
+                            <span class="message"></span>
+                        </div>
+                        <div class="form-group row">
+                            <label for="gender" class="form-gender">
+                                Gender
+                            </label>
+                            <div id="gender">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genderOption" value="Male" id="male"/>
+                                    <label class="form-check-label" for="male"> Male </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="genderOption" value="Female" id="female" />
+                                    <label class="form-check-label" for="female"> Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <label for="Skills" class="form-skills">
+                                Skills
+                            </label>
+                            <br>
+                            <label class="checkbox-inline form-skills">
+                                <input type="checkbox" name="skillOption" id="java" value="JAVA"> JAVA
+                            </label>
+                            <label class="checkbox-inline form-skills">
+                                <input type="checkbox" name="skillOption" id="c" value="C"> C
+                            </label>
+                            <label class="checkbox-inline form-skills">
+                                <input type="checkbox" name="skillOption" id="html" value="HTML"> HTML
+                            </label>
+                            <label class="checkbox-inline form-skills">
+                                <input type="checkbox" name="skillOption" id="css" value="CSS"> CSS
+                            </label>
+                        </div>
+                        <div class="buttons">
+                            <br>
+                            <button type="button" id="updateButton" class="submitButton" onclick="productUpdate()" title="Click to submit">
+                                Submit
+                            </button>
+                            <button type="button" id="clearButton" class="clearButton" onclick="formClear()" title="Click To clear all form fields">
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                    <p id="errorMsg"><br> </p>
+                </div>
+                </form>
+            </div>
+            <div class="form_output">
+                <h2 id="displayTable">Enrolled Users</h2>
+                <table id="productTable" class="table" title="Enrolled Users">
+                    <thead id="OutputTable">
+                        <tr>
+                            <th id ="description">Description</th>
+                            <th id ="image">Image</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>

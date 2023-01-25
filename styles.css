@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: linear-gradient(430deg,#71b7e6,#9b59b6);
+}
+.title,.form_output{
+    padding: 25px;
+    text-align: center;
+}
+.container{ 
+    display:grid;
+}
+.form_display{
+    font-weight: 700;
+    justify-self: center;
+    width:auto;
+    height:auto;
+    padding:1em;
+    display:grid;
+    gap:1em;
+    line-height: 1.6;
+
+    font-size: 20px;
+    background-color: #e6e2dd;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.submitButton,.clearButton{
+    width:30%;
+    padding:0.5em;
+    color: rgb(0, 0, 0);
+    font-weight: 800;    
+}
+.clearButton{
+    float: right;
+    
+}
+.submitButton:hover,.clearButton:hover {
+    background: rgb(177, 167, 167);
+}
+.table {
+    border-collapse:separate;
+    border-spacing:0 15px;
+    border-width: 2px;
+    border-color: lightslategray;
+    padding:0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#displayTable {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+#OutputTable
+{
+    font-size: 25px;
+    background-color: rgb(0, 40, 80);
+    color:white;
+    border: 1px solid black;
+    height: 70px;
+
+}
+#output_data{
+    font-size: 20px;
+    text-align: center;
+}
+#image {
+    width: 200px;
+}
+
+#newData {
+    border-color: lightslategrey;
+}
+
+.form-group{
+    flex-wrap: nowrap;
+}
